@@ -9,26 +9,6 @@
     <materialDesign:DialogHost>
         <Grid>
             <TabControl>
-                <TabItem Header="TabItem">
-                    <Grid Background="#fef4f4">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="21*"/>
-                            <ColumnDefinition Width="11*"/>
-                        </Grid.ColumnDefinitions>
-                        <materialDesign:Badged x:Name="SampleButton01_Badged" Margin="40,40,0,0">
-                            <Button x:Name="SampleButton01" Content="Badgeテスト" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="130" Click="SampleButton01_Click"/>
-                        </materialDesign:Badged>
-                    </Grid>
-                </TabItem>
-                <TabItem Header="メッセージ">
-                    <Grid Background="#fef4f4">
-                        <Button x:Name="SampleButton02" Content="表示" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="130" Click="SampleButton02_Click" Margin="430,40,0,0"/>
-                        <TextBox x:Name="TitleBox" Margin="40,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Height="40" AcceptsReturn="True" FontSize="20" HorizontalAlignment="Left"/>
-                        <Label Content="タイトル" HorizontalAlignment="Left" Margin="20,25,0,0" VerticalAlignment="Top" Width="200" Height="25"/>
-                        <TextBox x:Name="MessageBox" Margin="40,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="520" Height="200" AcceptsReturn="True" FontSize="20" HorizontalAlignment="Left"/>
-                        <Label Content="メッセージ" HorizontalAlignment="Left" Margin="20,115,0,0" VerticalAlignment="Top" Width="200" Height="25"/>
-                    </Grid>
-                </TabItem>
                 <TabItem Header="INSERT SQL">
                     <Grid Background="#fef4f4">
                         <TextBox x:Name="InsertSQL_Table" Margin="40,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Height="40" AcceptsReturn="True" FontSize="20" HorizontalAlignment="Left"/>
@@ -39,6 +19,26 @@
                         <Label Content="SQL文" HorizontalAlignment="Left" Margin="20,250,0,0" VerticalAlignment="Top" Width="200" Height="25"/>
                         <Button x:Name="MakeInsertSQL" Content="生成" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="130" Click="MakeInsertSQL_Click" Margin="430,40,0,0"/>
 
+                    </Grid>
+                </TabItem>
+                <TabItem Header="メッセージ" IsEnabled="False">
+                    <Grid Background="#fef4f4">
+                        <Button x:Name="SampleButton02" Content="表示" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="130" Click="SampleButton02_Click" Margin="430,40,0,0"/>
+                        <TextBox x:Name="TitleBox" Margin="40,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Height="40" AcceptsReturn="True" FontSize="20" HorizontalAlignment="Left"/>
+                        <Label Content="タイトル" HorizontalAlignment="Left" Margin="20,25,0,0" VerticalAlignment="Top" Width="200" Height="25"/>
+                        <TextBox x:Name="MessageBox" Margin="40,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="520" Height="200" AcceptsReturn="True" FontSize="20" HorizontalAlignment="Left"/>
+                        <Label Content="メッセージ" HorizontalAlignment="Left" Margin="20,115,0,0" VerticalAlignment="Top" Width="200" Height="25"/>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Badged" IsEnabled="False">
+                    <Grid Background="#fef4f4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="21*"/>
+                            <ColumnDefinition Width="11*"/>
+                        </Grid.ColumnDefinitions>
+                        <materialDesign:Badged x:Name="SampleButton01_Badged" Margin="40,40,0,0">
+                            <Button x:Name="SampleButton01" Content="Badgeテスト" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="130" Click="SampleButton01_Click"/>
+                        </materialDesign:Badged>
                     </Grid>
                 </TabItem>
             </TabControl>
